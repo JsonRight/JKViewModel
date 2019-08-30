@@ -8,21 +8,22 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "JKViewModelDataSource.h"
 @protocol JKViewModelAdapterDelegate <NSObject>
 
 - (void)initialization;
 
-- (NSBundle*)defaultBundle;
 
 @property (weak, nonatomic, readonly) UIViewController* moduleController;
 
-@property (weak, nonatomic, readonly) UIScrollView * contentView;
-
-- (void)registerCellWithReuseIdentifier:(NSString *)identifier;
+@property (weak, nonatomic, readonly) UIView * contentView;
+/**
+ 模块数据
+ */
+@property (strong, nonatomic) id<JKViewModelDataSource> data;
 
 - (void)reloadData;
 
-- (void)reloadWithData:(id)data;
+- (void)reloadWithData:(id<JKViewModelDataSource>)data;
 
 @end

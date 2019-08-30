@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "JKViewModelAdapterDelegate.h"
-
 @protocol JKViewModelDataSource <NSObject>
 
 /**
@@ -24,18 +22,23 @@
 
 @property (weak, nonatomic, readonly) UIViewController* moduleController;
 
-@property (weak, nonatomic, readonly) UIScrollView * contentView;
+@property (weak, nonatomic, readonly) UIView * contentView;
 
+// Override to subView
 - (void)registerCellWithReuseIdentifier;
 
+- (void)registerCell;
+
+- (void)registerCellWithBundle: (NSBundle*)bundle;
+
 @optional
-
+// Override to subView
 - (NSInteger)numberOfSections;
-
+// Override to subView
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
-
+// Override to subView
 - (UIView *)viewForItemAtIndexPath:(NSIndexPath *)indexPath;
-
+// Override to subView
 - (void)renderViewWithModel:(id<JKViewModelDataSource>)model;
 
 /**

@@ -9,16 +9,13 @@
 #import "JKBaseViewModelAdapter.h"
 @interface JKBaseViewModelAdapter()
 @property (weak, nonatomic, readwrite) UIViewController * moduleController;
-@property (weak, nonatomic, readwrite) UIScrollView * contentView;
+@property (weak, nonatomic, readwrite) UIView * contentView;
 @end
 @implementation JKBaseViewModelAdapter
-
+@synthesize data = _data;
 @synthesize moduleController = _moduleController;
 @synthesize contentView = _contentView;
 
-- (NSBundle *)defaultBundle {
-    return [NSBundle mainBundle];
-}
 - (void)customInitialization
 {
     [self initialization];
@@ -35,10 +32,6 @@
     
 }
 
-- (void)registerCellWithReuseIdentifier:(NSString *)identifier {
-    
-}
-
 - (void)reloadData { 
     UITableView * tableView = (UITableView *)_contentView;
     [tableView reloadData];
@@ -46,7 +39,8 @@
 
 
 - (void)reloadWithData:(id)data { 
-    
+    self.data = data;
+    [self reloadData];
 }
 
 

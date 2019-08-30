@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 @protocol JKViewModelDelegate <NSObject>
 
-- (void)lbk_cellWillDisplayAtIndexPath: (NSIndexPath*)indexPath withAdapter: (LBKTableViewBaseAdapter*)adapter;
+// Override to subView
+- (NSBundle*)defaultBundle;
+@optional
+- (void)lbk_cellWillDisplayAtIndexPath: (NSIndexPath*)indexPath;
 
 @end
 

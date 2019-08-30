@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lQx-bD-P8p" customClass="CoverView">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jcm-vx-WCL">
+                    <rect key="frame" x="0.0" y="0.0" width="308" height="173.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Jcm-vx-WCL" secondAttribute="height" multiplier="16:9" id="Ygq-jn-mj7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-P1-n02">
+                    <rect key="frame" x="4" y="181.5" width="300" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="pci-8L-Iy9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-KC-NiE">
+                    <rect key="frame" x="4" y="209.5" width="300" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="7cp-sE-ay7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jcm-vx-WCL" secondAttribute="trailing" id="97E-Ab-ndt"/>
+                <constraint firstItem="YTO-KC-NiE" firstAttribute="top" secondItem="3Cj-P1-n02" secondAttribute="bottom" constant="4" id="IJD-hD-fee"/>
+                <constraint firstItem="Jcm-vx-WCL" firstAttribute="leading" secondItem="lQx-bD-P8p" secondAttribute="leading" id="PUo-F4-PeU"/>
+                <constraint firstAttribute="trailing" secondItem="3Cj-P1-n02" secondAttribute="trailing" constant="4" id="QIt-eB-RPE"/>
+                <constraint firstItem="Jcm-vx-WCL" firstAttribute="top" secondItem="lQx-bD-P8p" secondAttribute="top" id="bHW-rl-q82"/>
+                <constraint firstItem="3Cj-P1-n02" firstAttribute="leading" secondItem="lQx-bD-P8p" secondAttribute="leading" constant="4" id="h43-RT-14c"/>
+                <constraint firstItem="3Cj-P1-n02" firstAttribute="top" secondItem="Jcm-vx-WCL" secondAttribute="bottom" constant="8" id="iW2-7p-yQS"/>
+                <constraint firstItem="YTO-KC-NiE" firstAttribute="leading" secondItem="lQx-bD-P8p" secondAttribute="leading" constant="4" id="k4b-G8-jsm"/>
+                <constraint firstAttribute="trailing" secondItem="YTO-KC-NiE" secondAttribute="trailing" constant="4" id="v1J-E8-saR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coverImageView" destination="Jcm-vx-WCL" id="Oge-pB-8qn"/>
+                <outlet property="subtitleLabel" destination="YTO-KC-NiE" id="wPB-Eh-6Qf"/>
+                <outlet property="titleLabel" destination="3Cj-P1-n02" id="ISX-OB-gCb"/>
+            </connections>
+            <point key="canvasLocation" x="43.478260869565219" y="-105.46875"/>
+        </view>
+    </objects>
+</document>

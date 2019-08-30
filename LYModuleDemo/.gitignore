@@ -1,0 +1,14 @@
+# Xcode
+.DS_Store
+build/
+*.xcworkspace
+xcuserdata
+DerivedData
+
+# Pods
+Pods/Target Support Files/*
+Pods/Headers
+Pods/Pods.xcodeproj
+Pods/AFNetworking/*
+Pods/Masonry/*
+Pods/SDWebImage/*

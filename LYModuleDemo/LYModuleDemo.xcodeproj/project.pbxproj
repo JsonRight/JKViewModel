@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010A4DFC2318BDDF0086CE7C /* ADModuleActionResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 010A4DFB2318BDDF0086CE7C /* ADModuleActionResponder.m */; };
+		011BF9822317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 011BF9812317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.m */; };
+		011E7DC12316683C0047628E /* LYModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DAA2316683C0047628E /* LYModuleController.m */; };
+		011E7DC22316683C0047628E /* LYModuleUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DB22316683C0047628E /* LYModuleUpdateItem.m */; };
+		011E7DC32316683C0047628E /* LYModuleControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DB42316683C0047628E /* LYModuleControllerFactory.m */; };
+		011E7DC42316683C0047628E /* NSObject+ModuleDataListSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DB52316683C0047628E /* NSObject+ModuleDataListSource.m */; };
+		011E7DC52316683C0047628E /* LYCollectionModuleLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DBA2316683C0047628E /* LYCollectionModuleLayoutViewController.m */; };
+		011E7DC62316683C0047628E /* LYModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DBD2316683C0047628E /* LYModuleViewController.m */; };
+		011E7DCC231669CA0047628E /* CommonModuleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DCB231669CA0047628E /* CommonModuleData.m */; };
+		011E7DCF23166B670047628E /* CoverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DCE23166B670047628E /* CoverInfo.m */; };
+		011E7DD62316713E0047628E /* CoverModuleDataListSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DD52316713E0047628E /* CoverModuleDataListSource.m */; };
+		011E7DD9231677840047628E /* HorizontalCollectionModuleAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DD8231677840047628E /* HorizontalCollectionModuleAppearance.m */; };
+		011E7DE423167D830047628E /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DE223167D830047628E /* CoverView.m */; };
+		011E7DEB231685870047628E /* WrapCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DEA231685870047628E /* WrapCollectionViewCell.m */; };
+		011E7DEE23168CAC0047628E /* CommonModulePageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E7DED23168CAC0047628E /* CommonModulePageDataSource.m */; };
+		011F4CA82314B9F900837AA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F4CA72314B9F900837AA1 /* AppDelegate.m */; };
+		011F4CAB2314B9F900837AA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F4CAA2314B9F900837AA1 /* ViewController.m */; };
+		011F4CAE2314B9F900837AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011F4CAC2314B9F900837AA1 /* Main.storyboard */; };
+		011F4CB02314B9FB00837AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011F4CAF2314B9FB00837AA1 /* Assets.xcassets */; };
+		011F4CB32314B9FB00837AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011F4CB12314B9FB00837AA1 /* LaunchScreen.storyboard */; };
+		011F4CB62314B9FB00837AA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F4CB52314B9FB00837AA1 /* main.m */; };
+		0143165823176CD5003E36CA /* ModuleDataListSourceClassName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0143165723176CD5003E36CA /* ModuleDataListSourceClassName.plist */; };
+		0143165A23176CFB003E36CA /* ModuleActionResponderClassName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0143165923176CFB003E36CA /* ModuleActionResponderClassName.plist */; };
+		0143165C23176D2A003E36CA /* CollectionModuleAppearanceClassName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0143165B23176D2A003E36CA /* CollectionModuleAppearanceClassName.plist */; };
+		0143165E2317708E003E36CA /* HorizontalCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0143165D2317708E003E36CA /* HorizontalCover.xib */; };
+		014316642317A6CC003E36CA /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014316622317A6CC003E36CA /* HeaderCollectionReusableView.m */; };
+		014316652317A6CC003E36CA /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014316632317A6CC003E36CA /* HeaderCollectionReusableView.xib */; };
+		0143166A2317AF62003E36CA /* VerticalCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014316692317AF61003E36CA /* VerticalCover.xib */; };
+		0143166D2317B050003E36CA /* VerticalCollectionModuleAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0143166C2317B050003E36CA /* VerticalCollectionModuleAppearance.m */; };
+		014316712317B45A003E36CA /* ADCollectionModuleAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 014316702317B45A003E36CA /* ADCollectionModuleAppearance.m */; };
+		014316732317B7FF003E36CA /* ADCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014316722317B7FF003E36CA /* ADCover.xib */; };
+		014316762317B9A8003E36CA /* ADModuleDataListSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 014316752317B9A8003E36CA /* ADModuleDataListSource.m */; };
+		744AA34A53BBB5DD8B2A6270 /* Pods_LYModuleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61774FA154564F080B4EEA53 /* Pods_LYModuleDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010A4DF92318AF990086CE7C /* LYModuleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYModuleCell.h; sourceTree = "<group>"; };
+		010A4DFA2318BDDF0086CE7C /* ADModuleActionResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADModuleActionResponder.h; sourceTree = "<group>"; };
+		010A4DFB2318BDDF0086CE7C /* ADModuleActionResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADModuleActionResponder.m; sourceTree = "<group>"; };
+		011BF97F2317EA7C006C39EF /* LYCollectionModuleAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionModuleAppearance.h; sourceTree = "<group>"; };
+		011BF9802317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCollectionModuleAppearanceUtil.h; sourceTree = "<group>"; };
+		011BF9812317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCollectionModuleAppearanceUtil.m; sourceTree = "<group>"; };
+		011E7DAA2316683C0047628E /* LYModuleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYModuleController.m; sourceTree = "<group>"; };
+		011E7DAB2316683C0047628E /* LYModuleActionResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleActionResponder.h; sourceTree = "<group>"; };
+		011E7DAC2316683C0047628E /* LYModuleUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleUpdateItem.h; sourceTree = "<group>"; };
+		011E7DAD2316683C0047628E /* LYModuleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleController.h; sourceTree = "<group>"; };
+		011E7DAF2316683C0047628E /* LYModuleDataListSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleDataListSource.h; sourceTree = "<group>"; };
+		011E7DB02316683C0047628E /* LYModuleAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleAppearance.h; sourceTree = "<group>"; };
+		011E7DB12316683C0047628E /* LYModuleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleData.h; sourceTree = "<group>"; };
+		011E7DB22316683C0047628E /* LYModuleUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYModuleUpdateItem.m; sourceTree = "<group>"; };
+		011E7DB42316683C0047628E /* LYModuleControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYModuleControllerFactory.m; sourceTree = "<group>"; };
+		011E7DB52316683C0047628E /* NSObject+ModuleDataListSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ModuleDataListSource.m"; sourceTree = "<group>"; };
+		011E7DB62316683C0047628E /* LYModuleControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleControllerFactory.h; sourceTree = "<group>"; };
+		011E7DB72316683C0047628E /* NSObject+ModuleDataListSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ModuleDataListSource.h"; sourceTree = "<group>"; };
+		011E7DB92316683C0047628E /* LYModuleLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleLayoutViewController.h; sourceTree = "<group>"; };
+		011E7DBA2316683C0047628E /* LYCollectionModuleLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCollectionModuleLayoutViewController.m; sourceTree = "<group>"; };
+		011E7DBB2316683C0047628E /* LYCollectionModuleLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCollectionModuleLayoutViewController.h; sourceTree = "<group>"; };
+		011E7DBD2316683C0047628E /* LYModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYModuleViewController.m; sourceTree = "<group>"; };
+		011E7DBE2316683C0047628E /* LYModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModuleViewController.h; sourceTree = "<group>"; };
+		011E7DC02316683C0047628E /* LYModulePageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYModulePageDataSource.h; sourceTree = "<group>"; };
+		011E7DCA231669CA0047628E /* CommonModuleData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModuleData.h; sourceTree = "<group>"; };
+		011E7DCB231669CA0047628E /* CommonModuleData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModuleData.m; sourceTree = "<group>"; };
+		011E7DCD23166B670047628E /* CoverInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverInfo.h; sourceTree = "<group>"; };
+		011E7DCE23166B670047628E /* CoverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverInfo.m; sourceTree = "<group>"; };
+		011E7DD42316713E0047628E /* CoverModuleDataListSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverModuleDataListSource.h; sourceTree = "<group>"; };
+		011E7DD52316713E0047628E /* CoverModuleDataListSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverModuleDataListSource.m; sourceTree = "<group>"; };
+		011E7DD7231677840047628E /* HorizontalCollectionModuleAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalCollectionModuleAppearance.h; sourceTree = "<group>"; };
+		011E7DD8231677840047628E /* HorizontalCollectionModuleAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalCollectionModuleAppearance.m; sourceTree = "<group>"; };
+		011E7DE123167D830047628E /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		011E7DE223167D830047628E /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		011E7DE323167D830047628E /* CoverViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverViewDataSource.h; sourceTree = "<group>"; };
+		011E7DE8231683E30047628E /* WrapContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WrapContentView.h; sourceTree = "<group>"; };
+		011E7DE9231685870047628E /* WrapCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WrapCollectionViewCell.h; sourceTree = "<group>"; };
+		011E7DEA231685870047628E /* WrapCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WrapCollectionViewCell.m; sourceTree = "<group>"; };
+		011E7DEC23168CAC0047628E /* CommonModulePageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModulePageDataSource.h; sourceTree = "<group>"; };
+		011E7DED23168CAC0047628E /* CommonModulePageDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModulePageDataSource.m; sourceTree = "<group>"; };
+		011F4CA32314B9F900837AA1 /* LYModuleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYModuleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		011F4CA62314B9F900837AA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		011F4CA72314B9F900837AA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		011F4CA92314B9F900837AA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		011F4CAA2314B9F900837AA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		011F4CAD2314B9F900837AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		011F4CAF2314B9FB00837AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011F4CB22314B9FB00837AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		011F4CB42314B9FB00837AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011F4CB52314B9FB00837AA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0143165723176CD5003E36CA /* ModuleDataListSourceClassName.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ModuleDataListSourceClassName.plist; sourceTree = "<group>"; };
+		0143165923176CFB003E36CA /* ModuleActionResponderClassName.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ModuleActionResponderClassName.plist; sourceTree = "<group>"; };
+		0143165B23176D2A003E36CA /* CollectionModuleAppearanceClassName.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CollectionModuleAppearanceClassName.plist; sourceTree = "<group>"; };
+		0143165D2317708E003E36CA /* HorizontalCover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalCover.xib; sourceTree = "<group>"; };
+		0143166023179EB4003E36CA /* CommonUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUIDefine.h; sourceTree = "<group>"; };
+		014316612317A6CC003E36CA /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		014316622317A6CC003E36CA /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		014316632317A6CC003E36CA /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		014316692317AF61003E36CA /* VerticalCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalCover.xib; sourceTree = "<group>"; };
+		0143166C2317B050003E36CA /* VerticalCollectionModuleAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalCollectionModuleAppearance.m; sourceTree = "<group>"; };
+		0143166E2317B08F003E36CA /* VerticalCollectionModuleAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalCollectionModuleAppearance.h; sourceTree = "<group>"; };
+		0143166F2317B45A003E36CA /* ADCollectionModuleAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCollectionModuleAppearance.h; sourceTree = "<group>"; };
+		014316702317B45A003E36CA /* ADCollectionModuleAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADCollectionModuleAppearance.m; sourceTree = "<group>"; };
+		014316722317B7FF003E36CA /* ADCover.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADCover.xib; sourceTree = "<group>"; };
+		014316742317B9A8003E36CA /* ADModuleDataListSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADModuleDataListSource.h; sourceTree = "<group>"; };
+		014316752317B9A8003E36CA /* ADModuleDataListSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADModuleDataListSource.m; sourceTree = "<group>"; };
+		06C0631DFB3E354504DEC761 /* Pods-LYModuleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYModuleDemo.release.xcconfig"; path = "Target Support Files/Pods-LYModuleDemo/Pods-LYModuleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		134DE58E532E53AD805BEBA5 /* Pods-LYModuleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYModuleDemo.debug.xcconfig"; path = "Target Support Files/Pods-LYModuleDemo/Pods-LYModuleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		61774FA154564F080B4EEA53 /* Pods_LYModuleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYModuleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011F4CA02314B9F900837AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744AA34A53BBB5DD8B2A6270 /* Pods_LYModuleDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011BF97E2317EA2C006C39EF /* CollectionModuleAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				011BF97F2317EA7C006C39EF /* LYCollectionModuleAppearance.h */,
+				011BF9802317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.h */,
+				011BF9812317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.m */,
+				010A4DF92318AF990086CE7C /* LYModuleCell.h */,
+			);
+			path = CollectionModuleAppearance;
+			sourceTree = "<group>";
+		};
+		011E7DA82316683C0047628E /* ModuleFrame */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DA92316683C0047628E /* ModuleController */,
+				011BF97E2317EA2C006C39EF /* CollectionModuleAppearance */,
+				011E7DB32316683C0047628E /* ModuleControllerFactory */,
+				011E7DB82316683C0047628E /* ModuleLayoutViewController */,
+				011E7DBC2316683C0047628E /* ModuleViewController */,
+				011E7DBF2316683C0047628E /* ModulePageDataSource */,
+			);
+			path = ModuleFrame;
+			sourceTree = "<group>";
+		};
+		011E7DA92316683C0047628E /* ModuleController */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DB12316683C0047628E /* LYModuleData.h */,
+				011E7DAF2316683C0047628E /* LYModuleDataListSource.h */,
+				011E7DAB2316683C0047628E /* LYModuleActionResponder.h */,
+				011E7DB02316683C0047628E /* LYModuleAppearance.h */,
+				011E7DAC2316683C0047628E /* LYModuleUpdateItem.h */,
+				011E7DB22316683C0047628E /* LYModuleUpdateItem.m */,
+				011E7DAD2316683C0047628E /* LYModuleController.h */,
+				011E7DAA2316683C0047628E /* LYModuleController.m */,
+			);
+			path = ModuleController;
+			sourceTree = "<group>";
+		};
+		011E7DB32316683C0047628E /* ModuleControllerFactory */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DB62316683C0047628E /* LYModuleControllerFactory.h */,
+				011E7DB42316683C0047628E /* LYModuleControllerFactory.m */,
+				011E7DB72316683C0047628E /* NSObject+ModuleDataListSource.h */,
+				011E7DB52316683C0047628E /* NSObject+ModuleDataListSource.m */,
+			);
+			path = ModuleControllerFactory;
+			sourceTree = "<group>";
+		};
+		011E7DB82316683C0047628E /* ModuleLayoutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DB92316683C0047628E /* LYModuleLayoutViewController.h */,
+				011E7DBB2316683C0047628E /* LYCollectionModuleLayoutViewController.h */,
+				011E7DBA2316683C0047628E /* LYCollectionModuleLayoutViewController.m */,
+			);
+			path = ModuleLayoutViewController;
+			sourceTree = "<group>";
+		};
+		011E7DBC2316683C0047628E /* ModuleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DBE2316683C0047628E /* LYModuleViewController.h */,
+				011E7DBD2316683C0047628E /* LYModuleViewController.m */,
+			);
+			path = ModuleViewController;
+			sourceTree = "<group>";
+		};
+		011E7DBF2316683C0047628E /* ModulePageDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DC02316683C0047628E /* LYModulePageDataSource.h */,
+			);
+			path = ModulePageDataSource;
+			sourceTree = "<group>";
+		};
+		011E7DDF23167D820047628E /* WrapView */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DE8231683E30047628E /* WrapContentView.h */,
+				011E7DE9231685870047628E /* WrapCollectionViewCell.h */,
+				011E7DEA231685870047628E /* WrapCollectionViewCell.m */,
+			);
+			path = WrapView;
+			sourceTree = "<group>";
+		};
+		011E7DE023167D830047628E /* CoverView */ = {
+			isa = PBXGroup;
+			children = (
+				011E7DE123167D830047628E /* CoverView.h */,
+				011E7DE223167D830047628E /* CoverView.m */,
+				011E7DE323167D830047628E /* CoverViewDataSource.h */,
+			);
+			path = CoverView;
+			sourceTree = "<group>";
+		};
+		011F4C9A2314B9F900837AA1 = {
+			isa = PBXGroup;
+			children = (
+				011F4CA52314B9F900837AA1 /* LYModuleDemo */,
+				011F4CA42314B9F900837AA1 /* Products */,
+				EEF96F2FF5C5B4B3E1619298 /* Pods */,
+				08B2B220F3F995D4CA9A96F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		011F4CA42314B9F900837AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011F4CA32314B9F900837AA1 /* LYModuleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011F4CA52314B9F900837AA1 /* LYModuleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				011F4CA62314B9F900837AA1 /* AppDelegate.h */,
+				011F4CA72314B9F900837AA1 /* AppDelegate.m */,
+				011F4CA92314B9F900837AA1 /* ViewController.h */,
+				011F4CAA2314B9F900837AA1 /* ViewController.m */,
+				011E7DEC23168CAC0047628E /* CommonModulePageDataSource.h */,
+				011E7DED23168CAC0047628E /* CommonModulePageDataSource.m */,
+				011F4CAC2314B9F900837AA1 /* Main.storyboard */,
+				011F4CAF2314B9FB00837AA1 /* Assets.xcassets */,
+				011F4CB12314B9FB00837AA1 /* LaunchScreen.storyboard */,
+				011F4CB42314B9FB00837AA1 /* Info.plist */,
+				011F4CB52314B9FB00837AA1 /* main.m */,
+				011E7DCA231669CA0047628E /* CommonModuleData.h */,
+				011E7DCB231669CA0047628E /* CommonModuleData.m */,
+				011E7DCD23166B670047628E /* CoverInfo.h */,
+				011E7DCE23166B670047628E /* CoverInfo.m */,
+				011E7DD42316713E0047628E /* CoverModuleDataListSource.h */,
+				011E7DD52316713E0047628E /* CoverModuleDataListSource.m */,
+				011E7DD7231677840047628E /* HorizontalCollectionModuleAppearance.h */,
+				011E7DD8231677840047628E /* HorizontalCollectionModuleAppearance.m */,
+				0143166E2317B08F003E36CA /* VerticalCollectionModuleAppearance.h */,
+				0143166C2317B050003E36CA /* VerticalCollectionModuleAppearance.m */,
+				0143165D2317708E003E36CA /* HorizontalCover.xib */,
+				014316692317AF61003E36CA /* VerticalCover.xib */,
+				0143166023179EB4003E36CA /* CommonUIDefine.h */,
+				014316612317A6CC003E36CA /* HeaderCollectionReusableView.h */,
+				014316622317A6CC003E36CA /* HeaderCollectionReusableView.m */,
+				014316632317A6CC003E36CA /* HeaderCollectionReusableView.xib */,
+				0143166F2317B45A003E36CA /* ADCollectionModuleAppearance.h */,
+				014316702317B45A003E36CA /* ADCollectionModuleAppearance.m */,
+				014316742317B9A8003E36CA /* ADModuleDataListSource.h */,
+				014316752317B9A8003E36CA /* ADModuleDataListSource.m */,
+				014316722317B7FF003E36CA /* ADCover.xib */,
+				010A4DFA2318BDDF0086CE7C /* ADModuleActionResponder.h */,
+				010A4DFB2318BDDF0086CE7C /* ADModuleActionResponder.m */,
+				0143165423176C74003E36CA /* Config */,
+				011E7DE023167D830047628E /* CoverView */,
+				011E7DDF23167D820047628E /* WrapView */,
+				011E7DA82316683C0047628E /* ModuleFrame */,
+			);
+			path = LYModuleDemo;
+			sourceTree = "<group>";
+		};
+		0143165423176C74003E36CA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0143165723176CD5003E36CA /* ModuleDataListSourceClassName.plist */,
+				0143165923176CFB003E36CA /* ModuleActionResponderClassName.plist */,
+				0143165B23176D2A003E36CA /* CollectionModuleAppearanceClassName.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		08B2B220F3F995D4CA9A96F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61774FA154564F080B4EEA53 /* Pods_LYModuleDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEF96F2FF5C5B4B3E1619298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				134DE58E532E53AD805BEBA5 /* Pods-LYModuleDemo.debug.xcconfig */,
+				06C0631DFB3E354504DEC761 /* Pods-LYModuleDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011F4CA22314B9F900837AA1 /* LYModuleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011F4CB92314B9FB00837AA1 /* Build configuration list for PBXNativeTarget "LYModuleDemo" */;
+			buildPhases = (
+				0441025C73A4C3DA1F813CA0 /* [CP] Check Pods Manifest.lock */,
+				011F4C9F2314B9F900837AA1 /* Sources */,
+				011F4CA02314B9F900837AA1 /* Frameworks */,
+				011F4CA12314B9F900837AA1 /* Resources */,
+				B27695BF6B29FC4036ECC4CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYModuleDemo;
+			productName = LYModuleDemo;
+			productReference = 011F4CA32314B9F900837AA1 /* LYModuleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011F4C9B2314B9F900837AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = ly;
+				TargetAttributes = {
+					011F4CA22314B9F900837AA1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 011F4C9E2314B9F900837AA1 /* Build configuration list for PBXProject "LYModuleDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011F4C9A2314B9F900837AA1;
+			productRefGroup = 011F4CA42314B9F900837AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011F4CA22314B9F900837AA1 /* LYModuleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011F4CA12314B9F900837AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011F4CB32314B9FB00837AA1 /* LaunchScreen.storyboard in Resources */,
+				0143166A2317AF62003E36CA /* VerticalCover.xib in Resources */,
+				014316732317B7FF003E36CA /* ADCover.xib in Resources */,
+				0143165823176CD5003E36CA /* ModuleDataListSourceClassName.plist in Resources */,
+				014316652317A6CC003E36CA /* HeaderCollectionReusableView.xib in Resources */,
+				0143165C23176D2A003E36CA /* CollectionModuleAppearanceClassName.plist in Resources */,
+				011F4CB02314B9FB00837AA1 /* Assets.xcassets in Resources */,
+				0143165A23176CFB003E36CA /* ModuleActionResponderClassName.plist in Resources */,
+				0143165E2317708E003E36CA /* HorizontalCover.xib in Resources */,
+				011F4CAE2314B9F900837AA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0441025C73A4C3DA1F813CA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYModuleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B27695BF6B29FC4036ECC4CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYModuleDemo/Pods-LYModuleDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LYModuleDemo/Pods-LYModuleDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LYModuleDemo/Pods-LYModuleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011F4C9F2314B9F900837AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011F4CAB2314B9F900837AA1 /* ViewController.m in Sources */,
+				014316762317B9A8003E36CA /* ADModuleDataListSource.m in Sources */,
+				011F4CB62314B9FB00837AA1 /* main.m in Sources */,
+				011BF9822317EAB5006C39EF /* LYCollectionModuleAppearanceUtil.m in Sources */,
+				011E7DC22316683C0047628E /* LYModuleUpdateItem.m in Sources */,
+				0143166D2317B050003E36CA /* VerticalCollectionModuleAppearance.m in Sources */,
+				011E7DC12316683C0047628E /* LYModuleController.m in Sources */,
+				011E7DCC231669CA0047628E /* CommonModuleData.m in Sources */,
+				011F4CA82314B9F900837AA1 /* AppDelegate.m in Sources */,
+				011E7DE423167D830047628E /* CoverView.m in Sources */,
+				011E7DD9231677840047628E /* HorizontalCollectionModuleAppearance.m in Sources */,
+				014316712317B45A003E36CA /* ADCollectionModuleAppearance.m in Sources */,
+				011E7DCF23166B670047628E /* CoverInfo.m in Sources */,
+				011E7DC32316683C0047628E /* LYModuleControllerFactory.m in Sources */,
+				011E7DC62316683C0047628E /* LYModuleViewController.m in Sources */,
+				011E7DC42316683C0047628E /* NSObject+ModuleDataListSource.m in Sources */,
+				011E7DEB231685870047628E /* WrapCollectionViewCell.m in Sources */,
+				010A4DFC2318BDDF0086CE7C /* ADModuleActionResponder.m in Sources */,
+				011E7DD62316713E0047628E /* CoverModuleDataListSource.m in Sources */,
+				011E7DEE23168CAC0047628E /* CommonModulePageDataSource.m in Sources */,
+				014316642317A6CC003E36CA /* HeaderCollectionReusableView.m in Sources */,
+				011E7DC52316683C0047628E /* LYCollectionModuleLayoutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		011F4CAC2314B9F900837AA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011F4CAD2314B9F900837AA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		011F4CB12314B9FB00837AA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011F4CB22314B9FB00837AA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011F4CB72314B9FB00837AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		011F4CB82314B9FB00837AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011F4CBA2314B9FB00837AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134DE58E532E53AD805BEBA5 /* Pods-LYModuleDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYModuleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ly.com.LYModuleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		011F4CBB2314B9FB00837AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C0631DFB3E354504DEC761 /* Pods-LYModuleDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LYModuleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ly.com.LYModuleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011F4C9E2314B9F900837AA1 /* Build configuration list for PBXProject "LYModuleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F4CB72314B9FB00837AA1 /* Debug */,
+				011F4CB82314B9FB00837AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011F4CB92314B9FB00837AA1 /* Build configuration list for PBXNativeTarget "LYModuleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011F4CBA2314B9FB00837AA1 /* Debug */,
+				011F4CBB2314B9FB00837AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011F4C9B2314B9F900837AA1 /* Project object */;
+}

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKViewModelDelegate.h"
 #import "JKViewModelDataSource.h"
 
-@interface JKBaseViewModel : NSObject<JKViewModelDataSource>
+@interface JKBaseViewModel : NSObject<JKViewModelDataSource, JKViewModelDelegate>
 
 @end
