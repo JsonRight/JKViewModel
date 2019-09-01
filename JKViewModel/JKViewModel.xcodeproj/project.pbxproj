@@ -8,33 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		BF159858231906A600E02331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF159857231906A600E02331 /* AppDelegate.m */; };
-		BF15985B231906A600E02331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15985A231906A600E02331 /* ViewController.m */; };
 		BF15985E231906A600E02331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF15985C231906A600E02331 /* Main.storyboard */; };
 		BF159860231906A800E02331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF15985F231906A800E02331 /* Assets.xcassets */; };
 		BF159863231906A800E02331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF159861231906A800E02331 /* LaunchScreen.storyboard */; };
 		BF159866231906A800E02331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF159865231906A800E02331 /* main.m */; };
 		BF1598722319093F00E02331 /* JKBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1598712319093F00E02331 /* JKBaseViewModel.m */; };
 		BF15987523191D5B00E02331 /* JKBaseViewModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15987423191D5B00E02331 /* JKBaseViewModelAdapter.m */; };
+		BF8CB24B231A990800132E2B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CB24A231A990800132E2B /* TableViewController.m */; };
+		BF8CB24E231A999000132E2B /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CB24D231A999000132E2B /* HomeViewModel.m */; };
+		BF8CB251231A99B700132E2B /* HomeViewModeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CB250231A99B700132E2B /* HomeViewModeAdapter.m */; };
+		BF8CB25C231AAA2600132E2B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CB25A231AAA2600132E2B /* TableViewCell.m */; };
+		BF8CB25D231AAA2600132E2B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8CB25B231AAA2600132E2B /* TableViewCell.xib */; };
+		BFE7ACCA231ACE6E00F7266B /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7ACC8231ACE6E00F7266B /* TableViewCell1.m */; };
+		BFE7ACCB231ACE6E00F7266B /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE7ACC9231ACE6E00F7266B /* TableViewCell1.xib */; };
+		BFE7ACCE231ACE8D00F7266B /* Home1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7ACCD231ACE8D00F7266B /* Home1ViewModel.m */; };
+		BFED3D9C231BD32500A35903 /* JKBaseModuleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFED3D9B231BD32500A35903 /* JKBaseModuleDataSource.m */; };
+		BFED3DA1231BE63F00A35903 /* HomeModuleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BFED3DA0231BE63F00A35903 /* HomeModuleDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF159853231906A600E02331 /* JKViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF159856231906A600E02331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF159857231906A600E02331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF159859231906A600E02331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF15985A231906A600E02331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF15985D231906A600E02331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF15985F231906A800E02331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF159862231906A800E02331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF159864231906A800E02331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF159865231906A800E02331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BF15986D2319072000E02331 /* JKViewModelDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewModelDataSource.h; sourceTree = "<group>"; };
-		BF15986E2319079700E02331 /* JKViewModelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewModelDelegate.h; sourceTree = "<group>"; };
-		BF15986F231907B600E02331 /* JKViewModelAdapterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewModelAdapterDelegate.h; sourceTree = "<group>"; };
+		BF15986E2319079700E02331 /* JKBaseViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBaseViewModelProtocol.h; sourceTree = "<group>"; };
+		BF15986F231907B600E02331 /* JKTableViewBaseAdapterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTableViewBaseAdapterProtocol.h; sourceTree = "<group>"; };
 		BF1598702319093F00E02331 /* JKBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBaseViewModel.h; sourceTree = "<group>"; };
 		BF1598712319093F00E02331 /* JKBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBaseViewModel.m; sourceTree = "<group>"; };
 		BF15987323191D5B00E02331 /* JKBaseViewModelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBaseViewModelAdapter.h; sourceTree = "<group>"; };
 		BF15987423191D5B00E02331 /* JKBaseViewModelAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBaseViewModelAdapter.m; sourceTree = "<group>"; };
+		BF8CB249231A990800132E2B /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BF8CB24A231A990800132E2B /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		BF8CB24C231A999000132E2B /* HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
+		BF8CB24D231A999000132E2B /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
+		BF8CB24F231A99B700132E2B /* HomeViewModeAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModeAdapter.h; sourceTree = "<group>"; };
+		BF8CB250231A99B700132E2B /* HomeViewModeAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModeAdapter.m; sourceTree = "<group>"; };
+		BF8CB259231AAA2600132E2B /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		BF8CB25A231AAA2600132E2B /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		BF8CB25B231AAA2600132E2B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		BFE7ACC7231ACE6E00F7266B /* TableViewCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell1.h; sourceTree = "<group>"; };
+		BFE7ACC8231ACE6E00F7266B /* TableViewCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell1.m; sourceTree = "<group>"; };
+		BFE7ACC9231ACE6E00F7266B /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		BFE7ACCC231ACE8D00F7266B /* Home1ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home1ViewModel.h; sourceTree = "<group>"; };
+		BFE7ACCD231ACE8D00F7266B /* Home1ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home1ViewModel.m; sourceTree = "<group>"; };
+		BFED3D9A231BD32500A35903 /* JKBaseModuleDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBaseModuleDataSource.h; sourceTree = "<group>"; };
+		BFED3D9B231BD32500A35903 /* JKBaseModuleDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBaseModuleDataSource.m; sourceTree = "<group>"; };
+		BFED3D9D231BD38700A35903 /* JKModuleDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKModuleDataSourceProtocol.h; sourceTree = "<group>"; };
+		BFED3D9E231BE3AE00A35903 /* JKModuleDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKModuleDelegate.h; sourceTree = "<group>"; };
+		BFED3D9F231BE63F00A35903 /* HomeModuleDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModuleDataSource.h; sourceTree = "<group>"; };
+		BFED3DA0231BE63F00A35903 /* HomeModuleDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModuleDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +96,27 @@
 			children = (
 				BF159856231906A600E02331 /* AppDelegate.h */,
 				BF159857231906A600E02331 /* AppDelegate.m */,
-				BF159859231906A600E02331 /* ViewController.h */,
-				BF15985A231906A600E02331 /* ViewController.m */,
 				BF15985C231906A600E02331 /* Main.storyboard */,
 				BF15985F231906A800E02331 /* Assets.xcassets */,
 				BF159861231906A800E02331 /* LaunchScreen.storyboard */,
 				BF159864231906A800E02331 /* Info.plist */,
 				BF159865231906A800E02331 /* main.m */,
+				BF8CB249231A990800132E2B /* TableViewController.h */,
+				BF8CB24A231A990800132E2B /* TableViewController.m */,
+				BF8CB259231AAA2600132E2B /* TableViewCell.h */,
+				BF8CB25A231AAA2600132E2B /* TableViewCell.m */,
+				BF8CB25B231AAA2600132E2B /* TableViewCell.xib */,
+				BF8CB24C231A999000132E2B /* HomeViewModel.h */,
+				BF8CB24D231A999000132E2B /* HomeViewModel.m */,
+				BF8CB24F231A99B700132E2B /* HomeViewModeAdapter.h */,
+				BF8CB250231A99B700132E2B /* HomeViewModeAdapter.m */,
+				BFED3D9F231BE63F00A35903 /* HomeModuleDataSource.h */,
+				BFED3DA0231BE63F00A35903 /* HomeModuleDataSource.m */,
+				BFE7ACC7231ACE6E00F7266B /* TableViewCell1.h */,
+				BFE7ACC8231ACE6E00F7266B /* TableViewCell1.m */,
+				BFE7ACC9231ACE6E00F7266B /* TableViewCell1.xib */,
+				BFE7ACCC231ACE8D00F7266B /* Home1ViewModel.h */,
+				BFE7ACCD231ACE8D00F7266B /* Home1ViewModel.m */,
 			);
 			path = JKViewModel;
 			sourceTree = "<group>";
@@ -84,13 +124,16 @@
 		BF15986C231906B100E02331 /* BaseViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BF15986E2319079700E02331 /* JKViewModelDelegate.h */,
-				BF15986D2319072000E02331 /* JKViewModelDataSource.h */,
-				BF15986F231907B600E02331 /* JKViewModelAdapterDelegate.h */,
+				BF15986E2319079700E02331 /* JKBaseViewModelProtocol.h */,
 				BF1598702319093F00E02331 /* JKBaseViewModel.h */,
 				BF1598712319093F00E02331 /* JKBaseViewModel.m */,
+				BF15986F231907B600E02331 /* JKTableViewBaseAdapterProtocol.h */,
 				BF15987323191D5B00E02331 /* JKBaseViewModelAdapter.h */,
 				BF15987423191D5B00E02331 /* JKBaseViewModelAdapter.m */,
+				BFED3D9A231BD32500A35903 /* JKBaseModuleDataSource.h */,
+				BFED3D9B231BD32500A35903 /* JKBaseModuleDataSource.m */,
+				BFED3D9D231BD38700A35903 /* JKModuleDataSourceProtocol.h */,
+				BFED3D9E231BE3AE00A35903 /* JKModuleDelegate.h */,
 			);
 			path = BaseViewModel;
 			sourceTree = "<group>";
@@ -152,7 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE7ACCB231ACE6E00F7266B /* TableViewCell1.xib in Resources */,
 				BF159863231906A800E02331 /* LaunchScreen.storyboard in Resources */,
+				BF8CB25D231AAA2600132E2B /* TableViewCell.xib in Resources */,
 				BF159860231906A800E02331 /* Assets.xcassets in Resources */,
 				BF15985E231906A600E02331 /* Main.storyboard in Resources */,
 			);
@@ -165,11 +210,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE7ACCA231ACE6E00F7266B /* TableViewCell1.m in Sources */,
 				BF1598722319093F00E02331 /* JKBaseViewModel.m in Sources */,
+				BFED3D9C231BD32500A35903 /* JKBaseModuleDataSource.m in Sources */,
 				BF15987523191D5B00E02331 /* JKBaseViewModelAdapter.m in Sources */,
-				BF15985B231906A600E02331 /* ViewController.m in Sources */,
 				BF159866231906A800E02331 /* main.m in Sources */,
+				BF8CB251231A99B700132E2B /* HomeViewModeAdapter.m in Sources */,
+				BF8CB24E231A999000132E2B /* HomeViewModel.m in Sources */,
+				BFED3DA1231BE63F00A35903 /* HomeModuleDataSource.m in Sources */,
+				BF8CB25C231AAA2600132E2B /* TableViewCell.m in Sources */,
+				BF8CB24B231A990800132E2B /* TableViewController.m in Sources */,
 				BF159858231906A600E02331 /* AppDelegate.m in Sources */,
+				BFE7ACCE231ACE8D00F7266B /* Home1ViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

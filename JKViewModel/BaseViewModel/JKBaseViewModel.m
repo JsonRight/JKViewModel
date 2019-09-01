@@ -7,61 +7,68 @@
 //
 
 #import "JKBaseViewModel.h"
+
 @interface JKBaseViewModel()
-@property (weak, nonatomic, readwrite) UIViewController * moduleController;
-@property (weak, nonatomic, readwrite) UIView * contentView;
+
+@property (weak, nonatomic, readwrite) UIViewController* _Nullable moduleController;
+
+@property (weak, nonatomic, readwrite) id<JKModuleDelegate> _Nullable moduleDataSource;
+
+@property (copy, nonatomic, readwrite) NSString * _Nullable viewModelID;
+
+@property (copy, nonatomic, readwrite) NSString * _Nullable cellID;
+
 @end
 
 @implementation JKBaseViewModel
+//@synthesize viewModelID = _viewModelID;
+//@synthesize moduleController = _moduleController;
+//@synthesize adapter = _adapter;
+//@synthesize data = _data;
 
-@synthesize viewModelID = _viewModelID;
-@synthesize moduleController = _moduleController;
-@synthesize contentView = _contentView;
-@synthesize data = _data;
-
-- (NSBundle *)defaultBundle { return [NSBundle mainBundle]; }
-
-- (void)registerCellWithReuseIdentifier{
-    [self registerCell];
+- (NSBundle * _Nullable)defaultBundle {
+    return [NSBundle mainBundle];
 }
 
-- (void)registerCell{
+- (void)registerCell {
     [self registerCellWithBundle:[self defaultBundle]];
 }
-- (void)registerCellWithBundle: (NSBundle*)bundle{
-    NSURL* urlOfNib = [bundle URLForResource:self.viewModelID withExtension:@"nib"];
-    if ([self.contentView isKindOfClass:UITableView.class]) {
-        UITableView * tableView = (UITableView *)self.contentView;
-        if (urlOfNib) {
-            UINib* nib = [UINib nibWithNibName:self.viewModelID bundle:bundle];
-            [tableView registerNib: nib
-                 forCellReuseIdentifier: self.viewModelID];
-        } else {
-            id cellClass = NSClassFromString(self.viewModelID);
-            if (cellClass) {
-                [tableView registerClass:cellClass forCellReuseIdentifier:self.viewModelID];
-            }
-        }
-    }else if ([self.contentView isKindOfClass:UICollectionView.class]) {
-        UICollectionView * collectionView = (UICollectionView *)self.contentView;
-        if (urlOfNib) {
-            UINib* nib = [UINib nibWithNibName:self.viewModelID bundle:bundle];
-            [collectionView registerNib:nib forCellWithReuseIdentifier:self.viewModelID];
-        } else {
-            id cellClass = NSClassFromString(self.viewModelID);
-            if (cellClass) {
-                [collectionView registerClass:cellClass forCellWithReuseIdentifier:self.viewModelID];
-            }
-        }
-    }else{
-        /////
+
+- (void)registerCellWithBundle:(NSBundle * _Nullable)bundle {
+    if ([self.moduleDataSource respondsToSelector:@selector(registerCellWithforCellReuseIdentifier:inBundle:)]) {
+        [self.moduleDataSource registerCellWithforCellReuseIdentifier:self.cellID inBundle:bundle];
     }
 }
-- (NSInteger)numberOfSections{ return 1; }
 
-- (NSInteger)numberOfItemsInSection:(NSInteger)section{ return 0; }
++ (instancetype _Nullable)viewModelWithModule:(UIViewController * _Nullable)moduleController moduleDataSource:(id<JKModuleDelegate> _Nullable)moduleDataSource {
+    JKBaseViewModel * viewModel = [[self alloc] init];
+    viewModel.moduleController = moduleController;
+    viewModel.moduleDataSource = moduleDataSource;
+    [viewModel registerCell];
+    return viewModel;
+}
 
-- (UIView *)viewForItemAtIndexPath:(NSIndexPath *)indexPath{ return nil; }
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return nil;
+}
 
+
+- (void)reloadData{
+    if ([self.moduleDataSource respondsToSelector:@selector(reloadData)]) {
+        [self.moduleDataSource reloadData];
+    }
+}
+
+- (void)reloadSections:(NSIndexSet *)sections withRowAnimation:(UITableViewRowAnimation)animation{
+    if ([self.moduleDataSource respondsToSelector:@selector(reloadSections:withRowAnimation:)]) {
+        [self.moduleDataSource reloadSections:sections withRowAnimation:animation];
+    }
+}
+
+- (void)reloadRowsAtIndexPaths:(NSArray<NSIndexPath*> *_Nullable)indexPaths withRowAnimation:(UITableViewRowAnimation)animation {
+    if ([self.moduleDataSource respondsToSelector:@selector(reloadRowsAtIndexPaths:withRowAnimation:)]) {
+        [self.moduleDataSource reloadRowsAtIndexPaths:indexPaths withRowAnimation:animation];
+    }
+}
 
 @end

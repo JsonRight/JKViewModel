@@ -1,5 +1,5 @@
 //
-//  JKBaseViewModelAdapter.h
+//  JKTableViewBaseAdapterProtocol.h
 //  JKViewModel
 //
 //  Created by 姜奎 on 2019/8/30.
@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JKTableViewBaseAdapterProtocol.h"
+#import <UIKit/UIKit.h>
+#import "JKBaseViewModelProtocol.h"
+#import "JKModuleDataSourceProtocol.h"
 
-@interface JKBaseViewModelAdapter : NSObject <JKTableViewBaseAdapterProtocol,JKModuleDelegate>
+@protocol JKTableViewBaseAdapterProtocol <UITableViewDataSource ,UITableViewDelegate>
+
 + (instancetype _Nullable )adapterWithModule:(UIViewController*_Nullable)moduleController tableView: (UITableView*_Nullable)tableView;
 
 @property (weak, nonatomic, readonly) UIViewController* _Nullable moduleController;
@@ -24,4 +27,6 @@
 
 - (void)renderWithDataSourceList:(NSMutableArray<JKModuleDataSourceProtocol>* _Nullable)dataSourceList;
 
+
 @end
+
